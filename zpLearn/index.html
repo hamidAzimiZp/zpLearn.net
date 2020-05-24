@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='images/logo.jpg'>
+    <title>Home</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" type="text/css" href="plugin/slider/css/zpSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleTicker.css">
+    <link rel="stylesheet" type="text/css" href="css/icons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.0.min.js"  charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="plugin/slider/jquery.mobile-events.min.js" charset="utf-8"></script>
+    <script src="plugin/slider/zpSlider.js" charset="utf-8"></script>
+    <script src="js/jquery.simpleTicker.js" charset="utf-8"></script>
+    <script src="js/custom-js.js" defer charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader">
+      <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- wrapper -->
+    <div class="wrapper" id="wrapper">
+      /* scroll progress bar */
+      <div class="progWrap mb-5">
+        <div class="progress pgs">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" id="myBar"></div>
+        </div>
+      </div>
+      <!-- header -->
+      <!-- navigation menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 text-right" id="navbar-expand-lg" style="z-index:999999999999999999;height:60px;top:2px !important">
+            <a href="index.html" class="navbar-brand font-italic">zpLearn.net</a>
+            <button type="button" class="navbar-toggler" name="button">
+                <span class="icon-dehaze"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-block text-center pr-3">
+                        <a href="#" class="nav-link dropdown-toggle dropdown-clickToShow custom-icon-nav btnNav " data-toggle="dropdown">
+                            دوره های آموزشی
+                            <span class="icon-book p-1" style="vertical-align:-2px;color:#fffd84"></span>
+                        </a>
+                        <div class="dropdown-menu" id="custom-main-dropdown-menu" style="width:100%">
+                            <div class="corner"></div>
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            لیست همه ی دوره ها
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p>جدیدترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            دوره های حضوری
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class=" icon-money"></span>
+                                            <p> پر فروش ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            دور های غیر حضوری
+                                        </div>
+                                        <div class="d-flex w-100 " id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p> محبوب ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_backspace"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-icon-nav">
+                        <a href="#" class="nav-link btn btnNav">
+                            درباره ما
+                            <span class="icon-info_outline" style="color:#10ddff"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item custom-icon-nav btnNav">
+                        <a href="#" class="nav-link btn ">
+                            تماس با ما
+                            <span class="icon-phone" style="color:greenyellow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- login and sign in buttons -->
+                <div class="logAndRegister" style="margin-top:-5px">
+                  <ul>
+                    <li>
+                      <a href="logIn.html" class="nav-link btnNav">
+                        ورود
+                        <span class="icon-person_pin" style="vertical-align:-4px;color:#7affe0"></span>
+                      </a>
+                    </li>
+                    <span class="text-white" style="vertical-align:-2px">|</span>
+                    <li>
+                      <a href="register.html" class="nav-link btnNav">
+                        ثبت نام
+                        <span class="icon-person_add" style="vertical-align:-2px;color:gold"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+      <!-- navigation for small client -->
+      <div class="nav2Wrapper">
+        <nav>
+          <dl class="myOccordion">
+            <dt><a href="#">خانه</a></dt>
+            <dt><a href="#">انجمن</a></dt>
+            <dt class="zpHas-sub">میان بر</dt>
+            <dd>
+              <ul class="text-right">
+                 <li><a href="#">صفحات</a></li>
+                 <li><a href="#">بانک کد</a></li>
+              </ul>
+            </dd>
+            <dt class="zpHas-sub">لیست دوره ها</dt>
+            <dd>
+              <ul class="text-right">
+                <li><a href="#">متخصص پایتون</a></li>
+                <li>
+                  <dt class="zpHas-sub">طراحی وب</dt>
+                  <dd>
+                    <ul class="text-right">
+                      <li><a href="#">سی اس اس</a></li>
+                      <li><a href="#">اچ تی ام ال</a></li>
+                      <li><a href="#">بوت استرپ</a></li>
+                    </ul>
+                  </dd>
+                </li>
+                <li><a href="#">متخصص جاوا </a></li>
+                <li><a href="#">متخصص php</a></li>
+                <li><a href="#">متخصص js</a></li>
+              </ul>
+            </dd>
+            <dt><a href="logIn.html">ورود</a></dt>
+            <dt><a href="register.html">ثبت نام</a></dt>
+            <dt><a href="#">درباره ما</a></dt>
+          </dl>
+        </nav>
+      </div>
+      <header>
+        <!-- social & random text-->
+        <div class="container-fluid hiUserWrapper ">
+          <div class="row hiUser">
+            <div class="col-6">
+              <div class="random-text">
+                <div class="top-title">
+                  <div id="demo" class="ticker" style="height:100% !important">
+                    <ul class="text-center text-sm-right">
+                      <li>مسابقات طراحی وب!!</li>
+                      <li>آموزش 0 تا 100 طراحی وب</li>
+                      <li>آموزش زبان های سمت سرور</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+              $.simpleTicker($("#demo"), {
+                  speed: 1000,
+                  delay: 3000,
+                  easing: 'swing',
+                  effectType: 'fade'
+              });
+            </script>
+            <div class="col-6">
+              <div class="social-icon">
+                <ul>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="#"><span class="icon-telegram"></span></a></li>
+                  <li><a href="#"><span class="icon-youtube"></span></a></li>
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- topSlide -->
+        <div class="container-fluid topSlide">
+          <div class="cover"></div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6">
+              <div class="topSlide-title">
+                <p class="text-white text-center">
+                  همگام با ما برای ورود به عرصه توسعه وب
+                  <br><br>
+                  <span class="d-none d-lg-block">
+                    zpLearn.net
+                    برگزار کننده دوره های تخصصی مبتنی بر طراحی و برنامه نویسی وب
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-0 mt-sm-5">
+            <div class="col-12 col-sm-6">
+              <form class="myFormSearch" action="index.html" method="post">
+                <div class="input-group">
+                  <input type="text" class="form-control border-0 rounded-right " placeholder="دنبال چی می گردی...؟" style="border-bottom-left-radius: 0; border-top-left-radius:0">
+                  <div class="input-group-prepend">
+                    <div class="ss input-group-text border-0 text-white rounded-left">
+                      بگرد
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-12 col-sm-12">
+              <ul class="icon-hiUser">
+                <li><span class="icon-school"></span></li>
+                <span class="caption">
+                  1500
+                  <span>دانشجو</span>
+                </span>
+                <li class="two"><span class="icon-access_alarms"></span></li>
+                <span class="caption">
+                  3000
+                  <span>دقیقه آموزش</span>
+                </span>
+                <li><span class="icon-supervisor_account"></span></li>
+                <span class="caption">
+                  20
+                  <span>دوره آموزشی</span>
+                </span>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- empty -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12"><br><br></div>
+        </div>
+      </div>
+      <!-- slider -->
+      <div class="container-fluid mt-2">
+        <div class="row">
+          <div class="col-12 col-lg-12 mb-2 ">
+            <div class="zpSlider rounded shadow-lg" id="slider1" style="height: 480px">
+              <ul>
+                <li title="متخصص لینوکس">
+                  <a href="#"><img src="images/office.jpg" alt="b" ></a>
+                </li>
+                <li title="object oriented">
+                  <a href="#"><img src="images/sliderOne.jpg" alt="b" ></a>
+                </li>
+                <li title="user experience">
+                  <a href="#"><img src="images/slider1.jpg" alt="a" ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $('#slider1').zpSlider();
+      </script>
+      <!-- main content -->
+      <div class="main-content mt-2">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-1 p-0 d-none d-lg-block">
+              <div class="social-icon social-icon2" id="socialScroll">
+               <p >مشترک شوید</p>
+               <ul>
+                 <li><a href="#"><span class="icon-instagram"></span></a></li>
+                 <li><a href="#"><span class="icon-telegram"></span></a></li>
+                 <li><a href="#"><span class="icon-youtube"></span></a></li>
+                 <li><a href="#"><span class="icon-facebook"></span></a></li>
+               </ul>
+               <p>zplearn</p>
+               </div>
+            </div>
+            <div class="col-12 col-lg-10">
+              <!-- section one -->
+              <section id="section-one">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-12 mt-2 " style="border-radius: 10px;background-color:#eee">
+                      <div class="row">
+                        <div class="col-12 bg-info" style="border-top-left-radius: 10px;border-top-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white">متخصص شوید</h3>
+                        </div>
+                      </div>
+                      <div class="row first-cards p-3 p-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card6.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card2.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card3.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card4.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card5.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card1.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  نقدی
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row rowBtn-for-more">
+                        <div class="col-12 bg-info" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white" style="font-size:20px">برای دیدن دوره های بیشتر<a href="#" class="more" style="color:red">اینجا</a> کلیک کنید</h3>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <!-- section two -->
+              <section id="section-two" class="mt-4">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-12 mt-2 " style="border-radius: 10px;background-color:#eee">
+                      <div class="row">
+                        <div class="col-12 bg-info" style="border-top-left-radius: 10px;border-top-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white">مقالات</h3>
+                        </div>
+                      </div>
+                      <div class="row first-cards p-3 p-lg-3">
+                        <div class="col-12">
+                          <div class="row justify-content-between p-2 ">
+                            <div class="col-12 col-lg-7 rounded d-none d-lg-block">
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row">
+                                  <div class="col-5 pr-3 d- d-lg-block">
+                                    <img src="images/card1.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-5 order-first order-lg-last">
+                              <div class="contet shadow-sm rounded bg-warning">
+                                <aside class="aside-list bg-light rounded">
+                                  <div class="aside-head rounded">
+                                    <h4 class="rounded">میانبر مقالات</h4>
+                                  </div>
+                                  <div class="aside-body">
+                                    <ul>
+                                      <li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                      <li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                      <li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                      <li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                      <li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                    </ul>
+                                  </div>
+                                </aside>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between p-2 d-none d-lg-block">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card10.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between p-2 d-none d-lg-block">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row justify-content-center">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card2.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row rowBtn-for-more">
+                        <div class="col-12 bg-info" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white" style="font-size:20px">برای دیدن مقالات بیشتر<a href="#" class="more" style="color:red">اینجا</a> کلیک کنید</h3>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <!-- section three -->
+              <section id="section-three" class="mt-4">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-12 mt-2 " style="border-radius: 10px;background-color:#eee">
+                      <div class="row">
+                        <div class="col-12 bg-info" style="border-top-left-radius: 10px;border-top-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white">دوره های رایگان</h3>
+                        </div>
+                      </div>
+                      <div class="row first-cards first-second p-3 p-lg-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card7.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card8.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card9.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card10.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card11.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card12.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card13.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card14.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card15.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card16.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card17.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <div class="card costum-card-style">
+                            <div class="imageCard">
+                              <img src="images/card18.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="text-right">
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                              </p>
+                              <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                            </div>
+                            <div class="card-footer">
+                              <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                  200
+                                  <span class="icon-visibility"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  45
+                                  <span class="icon-commenting"></span>
+                                </li>
+                                <li class="list-inline-item">
+                                  رایگان
+                                  <span class=" icon-files-o"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row rowBtn-for-more">
+                        <div class="col-12 bg-info" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white" style="font-size:20px">برای دیدن دوره های بیشتر<a href="#" class="more" style="color:red">اینجا</a> کلیک کنید</h3>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="container-fluid bg-dark mt-3">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row text-right pr-0">
+              <div class="col-12 col-lg-4 pr-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>خدمات مشتریان</h4>
+                  </div>
+                  <div class="foot-body">
+                    <ul>
+                      <li><a href="#">سوالات متداول</a></li>
+                      <li><a href="#">شرایط استفاده</a></li>
+                      <li><a href="#">حریم خصوصی</a></li>
+                      <li><a href="#">افتخارات</a></li>
+                      <li><a href="#">انتقادات و پیشنهادات</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>ثبت نام در خبرنامه</h4>
+                  </div>
+                  <div class="foot-body">
+                    <p class="mb-4">
+                      با ثبت نام در خبرنامه ، اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه ما مطلع می شوید
+                    </p>
+                    <form class="newsRigesteriForm" action="index.html" method="post">
+                      <div class="d-flex">
+                        <input type="text" class="form-control " placeholder="ایمیل خود را وارد کنید">
+                        <span type="button" class="btn btn-success mr-2" name="button">ثبت نام</span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>نماد ها</h4>
+                  </div>
+                  <div class="foot-body d-flex justify-content-center">
+                    <div class="signs d-flex " style="padding:10px">
+                      <div class="sign bg-white ml-5">
+                        <a href="#">
+                          <img src="images/star2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="sign bg-white">
+                        <a href="#">
+                          <img src="images/logo-samandehi.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 p-1">
+            <div class="p-2" >
+              <p class="text-center pt-3" style="color:cyan">
+                کلیه حقوق مادی و معنوی این وب‌ سایت محفوظ است. © ۱۳۹۹
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

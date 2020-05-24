@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='images/logo.jpg'>
+    <title>Login</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" type="text/css" href="plugin/slider/css/zpSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleTicker.css">
+    <link rel="stylesheet" type="text/css" href="css/icons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+    <link rel="stylesheet" type="text/css" href="css/jspc-gray.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.0.min.js"  charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="plugin/slider/jquery.mobile-events.min.js" charset="utf-8"></script>
+    <script src="plugin/slider/zpSlider.js" charset="utf-8"></script>
+    <script src="js/jquery.simpleTicker.js" charset="utf-8"></script>
+    <script src="js/custom-js.js" defer charset="utf-8"></script>
+    <script src="js/js-persian-cal.min.js" charset="utf-8"></script>
+    <script src="js/jq_validate.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader">
+      <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <!-- header -->
+      <!-- navigation menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 text-right" id="navbar-expand-lg" style="z-index:999999999999999999;height:60px">
+            <a href="index.html" class="navbar-brand font-italic">zpLearn.net</a>
+            <button type="button" class="navbar-toggler" name="button">
+                <span class="icon-dehaze"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-block text-center pr-3">
+                        <a href="#" class="nav-link dropdown-toggle dropdown-clickToShow custom-icon-nav btnNav " data-toggle="dropdown">
+                            دوره های آموزشی
+                            <span class="icon-book p-1" style="vertical-align:-2px;color:#fffd84"></span>
+                        </a>
+                        <div class="dropdown-menu" id="custom-main-dropdown-menu" style="width:100%">
+                            <div class="corner"></div>
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            لیست همه ی دوره ها
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p>جدیدترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            دوره های حضوری
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class=" icon-money"></span>
+                                            <p> پر فروش ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="alert alert-light bg-dark text-white text-center" style="font-style:italic;font-size:20px">
+                                            دور های غیر حضوری
+                                        </div>
+                                        <div class="d-flex w-100 " id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p> محبوب ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0 text-right" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_backspace"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-icon-nav">
+                        <a href="#" class="nav-link btn btnNav">
+                            درباره ما
+                            <span class="icon-info_outline" style="color:#10ddff"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item custom-icon-nav btnNav">
+                        <a href="#" class="nav-link btn ">
+                            تماس با ما
+                            <span class="icon-phone" style="color:greenyellow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- login and sign in buttons -->
+                <div class="logAndRegister" style="margin-top:-5px">
+                  <ul>
+                    <li>
+                      <a href="logIn.html" class="nav-link btnNav">
+                        ورود
+                        <span class="icon-person_pin" style="vertical-align:-4px;color:#7affe0"></span>
+                      </a>
+                    </li>
+                    <span class="text-white" style="vertical-align:-2px">|</span>
+                    <li>
+                      <a href="register.html" class="nav-link btnNav">
+                        ثبت نام
+                        <span class="icon-person_add" style="vertical-align:-2px;color:gold"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+      <!-- navigation for small client -->
+      <div class="nav2Wrapper">
+        <nav>
+          <dl class="myOccordion">
+            <dt><a href="#">خانه</a></dt>
+            <dt><a href="#">انجمن</a></dt>
+            <dt class="zpHas-sub">میان بر</dt>
+            <dd>
+              <ul class="text-right">
+                 <li><a href="#">صفحات</a></li>
+                 <li><a href="#">بانک کد</a></li>
+              </ul>
+            </dd>
+            <dt class="zpHas-sub">لیست دوره ها</dt>
+            <dd>
+              <ul class="text-right">
+                <li><a href="#">متخصص پایتون</a></li>
+                <li>
+                  <dt class="zpHas-sub">طراحی وب</dt>
+                  <dd>
+                    <ul class="text-right">
+                      <li><a href="#">سی اس اس</a></li>
+                      <li><a href="#">اچ تی ام ال</a></li>
+                      <li><a href="#">بوت استرپ</a></li>
+                    </ul>
+                  </dd>
+                </li>
+                <li><a href="#">متخصص جاوا </a></li>
+                <li><a href="#">متخصص php</a></li>
+                <li><a href="#">متخصص js</a></li>
+              </ul>
+            </dd>
+            <dt><a href="logIn.html">ورود</a></dt>
+            <dt><a href="register.html">ثبت نام</a></dt>
+            <dt><a href="#">درباره ما</a></dt>
+          </dl>
+        </nav>
+      </div>
+      <!-- logIn form -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-lg-6 col-xl-5">
+            <div class="formWrapper m-auto bg-light">
+              <form class="w-100" id="regLogForm" action="index.html" method="post" style="height: 520px;">
+                <div class="form-title">
+                  <h1> فرم ورود</h1>
+                </div>
+                <div class="input-group px-3 mt-5">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-info text-white">
+                      <label for="inp4">نام کاربری یا ایمیل</label>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control rounded rounded-right-0 " data-vld="required|minlen_3" name="نام کاربری یا ایمیل" id="inp4" placeholder="نام  کاربری یا ایمیل خود را وارد کنید">
+                </div>
+                <div class="input-group px-3 mt-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-info text-white">
+                      <label for="inp6">پسورد</label>
+                    </div>
+                  </div>
+                  <input type="password" class="form-control rounded rounded-right-0" data-vld="required" name="پسورد" id="inp6" placeholder="پسورد خود را وارد کنید">
+                </div>
+                <p class="text-center pt-3 font-italic">ورود از طریق :</p>
+                <div class="subRes loginFrom px-3 mt-3">
+                  <input type="button" name="" value="Facebook">
+                  <input type="button" name="" value="Google">
+                </div>
+                <div class="subRes px-3 mt-3">
+                  <input type="submit" name="" value="ثبت نام">
+                </div>
+                <p class="text-center pt-3 font-italic">در حال حاضر حساب کاربری ندارد؟<a href="register.html"> ثبت نام </a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $('#regLogForm').zp_validate()
+      </script>
+      <!-- footer -->
+      <div class="container-fluid bg-dark mt-3">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row text-right pr-0">
+              <div class="col-12 col-lg-4 pr-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>خدمات مشتریان</h4>
+                  </div>
+                  <div class="foot-body">
+                    <ul>
+                      <li><a href="#">سوالات متداول</a></li>
+                      <li><a href="#">شرایط استفاده</a></li>
+                      <li><a href="#">حریم خصوصی</a></li>
+                      <li><a href="#">افتخارات</a></li>
+                      <li><a href="#">انتقادات و پیشنهادات</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>ثبت نام در خبرنامه</h4>
+                  </div>
+                  <div class="foot-body">
+                    <p class="mb-4">
+                      با ثبت نام در خبرنامه ، اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه ما مطلع می شوید
+                    </p>
+                    <form class="newsRigesteriForm" action="index.html" method="post">
+                      <div class="d-flex">
+                        <input type="text" class="form-control " placeholder="ایمیل خود را وارد کنید">
+                        <span type="button" class="btn btn-success mr-2" name="button">ثبت نام</span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="content">
+                  <div class="foot-title">
+                    <h4>نماد ها</h4>
+                  </div>
+                  <div class="foot-body d-flex justify-content-center">
+                    <div class="signs d-flex " style="padding:10px">
+                      <div class="sign bg-white ml-5">
+                        <a href="#">
+                          <img src="images/star2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="sign bg-white">
+                        <a href="#">
+                          <img src="images/logo-samandehi.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 p-1">
+            <div class="p-2" >
+              <p class="text-center pt-3" style="color:cyan">
+                کلیه حقوق مادی و معنوی این وب‌ سایت محفوظ است. © ۱۳۹۹
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
