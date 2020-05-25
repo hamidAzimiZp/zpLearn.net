@@ -269,12 +269,12 @@ ul#sub-menu-listgroup li span{
   border-right: 8px solid #343a40;
   border-bottom: 15px solid yellow;
   position: absolute;
-  right: 18.9%;
+  right: 17.9%;
   top: -4%;
 }
 @media screen and (max-width:992px) {
   .corner{
-    right: 28.9% !important
+    right: 27.9% !important
   }
 }
 .custom-navigation li div.dropdown-menu{
