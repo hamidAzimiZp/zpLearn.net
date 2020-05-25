@@ -1,11 +1,8 @@
 @font-face {
-  font-family: bNazanin,
-  src : url("../fonts/B-NAZANIN.TTF") format('true type')
+  font-family: IRANSans-Black,
+  src : url("../fonts/IRANSans-Black.ttf") format('true type')
 }
-@font-face {
-  font-family: iranYekan,
-  src: url ("../fonts/iranyekanwebregular.ttf")format('true type')
-}
+
 *{
   padding: 0;
   margin: 0;
@@ -15,7 +12,7 @@
 body{
   background: #000;
   overflow-x: hidden;
-  font-family: bNazanin;
+  font-family: IRANSans-Black;
   user-select: none;
   z-index: -2;
 }
@@ -272,12 +269,12 @@ ul#sub-menu-listgroup li span{
   border-right: 8px solid #343a40;
   border-bottom: 15px solid yellow;
   position: absolute;
-  right: 17.9%;
+  right: 18.9%;
   top: -4%;
 }
 @media screen and (max-width:992px) {
   .corner{
-    right: 27.9% !important
+    right: 28.9% !important
   }
 }
 .custom-navigation li div.dropdown-menu{
@@ -377,7 +374,7 @@ dd dd ul li:first-child{
   background-image: url('../images/sliderThree.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 .cover{
@@ -386,7 +383,7 @@ dd dd ul li:first-child{
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .topSlide-title p{
   margin-top: 100px;
@@ -618,7 +615,12 @@ dd dd ul li:first-child{
   background: #ffcc6dd1;
   border-radius: 5px;
   text-shadow: 1px 1px 3px #fff;
-  transition: 0.3s linear
+  transition: 0.3s linear;
+}
+@media screen and (max-width:450px){
+  .aside-list ul li a{
+    font-size: 13px !important;
+  }
 }
 .aside-list ul li:hover a{
   transform: translateX(-10px);
