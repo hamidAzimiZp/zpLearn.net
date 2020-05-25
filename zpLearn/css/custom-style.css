@@ -383,7 +383,7 @@ dd dd ul li:first-child{
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .topSlide-title p{
   margin-top: 100px;
