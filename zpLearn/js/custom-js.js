@@ -29,22 +29,47 @@ $(document).ready(function(){
       $('.nav2Wrapper').css('marginRight','-100%')
     }
   })
-  // for sticky div of social users
-  var navBar = document.getElementById('socialScroll')
-  window.addEventListener('scroll',function(){
-    var navClasses = navBar.getAttribute('class');
-    if(!navClasses){
-      navBar.setAttribute('class','')
-    }
-    if(window.scrollY <= 800 ){
-      navBar.setAttribute('class',navClasses.replace('sticky',''))
-    }else{
-      if(navClasses.indexOf('sticky') == -1){
-        navBar.setAttribute('class',navClasses + " sticky");
-      }
-    }
-  })
 
+  // for sticky div of social users
+  function checkScroll(scr){
+    var navBar = document.getElementById('socialScroll')
+    window.addEventListener('scroll',function(){
+      var navClasses = navBar.getAttribute('class');
+      if(!navClasses){
+        navBar.setAttribute('class','')
+      }
+      if(window.scrollY <= scr ){
+        navBar.setAttribute('class',navClasses.replace('sticky',''))
+      }else{
+        if(navClasses.indexOf('sticky') == -1){
+          navBar.setAttribute('class',navClasses + " sticky");
+        }
+      }
+    })
+  }
+  let route = {
+    _routes : {},
+
+    add : function(url, action){
+      this._routes[url] = action
+    },
+
+    run : function(){
+      jQuery.each(this._routes, function(pattern){
+        if(location.href.match(pattern)){
+          this()
+        }
+      })
+    }
+  }
+  
+  route.add("../index.html", function(){
+    checkScroll(800)
+  })
+  route.add("../articles.html", function(){
+    checkScroll(1)
+  })
+  route.run()
   // smoothScroll
 $(document).ready(function(){
   function smoothScrollTo(y){
