@@ -26,6 +26,29 @@ a:hover{
 ul{
   list-style-type: none;
 }
+/* for corona #COVID_19 */
+span.corona{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    margin-right: -3px;
+    animation: _danger 1s ease-in-out infinite;
+}
+@keyframes _danger{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 /* loader */
 div#loader{
   position: fixed;
@@ -697,6 +720,7 @@ dd dd ul li:first-child{
 .subRes input[type="submit"]{
   width: 200px;
   display: flex;
+  justify-content: center;
   padding: 10px;
   border-radius: 5px;
   transition: 0.3s linear;
@@ -726,6 +750,7 @@ dd dd ul li:first-child{
 .loginFrom input{
   width: 200px;
   display: flex;
+  justify-content: center;
   padding: 10px;
   border-radius: 5px;
   transition: 0.3s linear;

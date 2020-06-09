@@ -94,7 +94,7 @@ $(document).ready(function(){
   setTimeout(function(){
     showContent();
     document.body.style.background = "url('images/bg8.jpg')"
-  },3000)
+  })
 })
 function showContent() {
   loader.css("display","none");

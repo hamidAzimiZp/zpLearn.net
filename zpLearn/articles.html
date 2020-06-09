@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='icon' href='images/logo.jpg'>
-    <title>Register</title>
+    <title>Home</title>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.simpleTicker.css">
     <link rel="stylesheet" type="text/css" href="css/icons/style.css">
     <link rel="stylesheet" type="text/css" href="css/custom-style.css">
-    <link rel="stylesheet" type="text/css" href="css/jspc-gray.css">
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -25,18 +24,23 @@
     <script src="plugin/slider/zpSlider.js" charset="utf-8"></script>
     <script src="js/jquery.simpleTicker.js" charset="utf-8"></script>
     <script src="js/custom-js.js" defer charset="utf-8"></script>
-    <script src="js/js-persian-cal.min.js" charset="utf-8"></script>
-    <script src="js/jq_validate.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- loader -->
-  <div id="loader">
-    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-  </div>
-  <div class="wrapper" id="wrapper">
+    <div id="loader">
+      <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- wrapper -->
+    <div class="wrapper" id="wrapper">
+      /* scroll progress bar */
+      <div class="progWrap mb-5">
+        <div class="progress pgs">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" id="myBar"></div>
+        </div>
+      </div>
       <!-- header -->
       <!-- navigation menu -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 text-right" id="navbar-expand-lg" style="z-index:999999999999999999;height:60px">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 text-right" id="navbar-expand-lg" style="z-index:999999999999999999;height:60px;top:2px !important">
             <a href="index.html" class="navbar-brand font-italic">zpLearn.net</a>
             <button type="button" class="navbar-toggler" name="button">
                 <span class="icon-dehaze"></span>
@@ -195,7 +199,7 @@
       <div class="nav2Wrapper">
         <nav>
           <dl class="myOccordion">
-            <dt><a href="index.html">خانه</a></dt>
+            <dt><a href="#">خانه</a></dt>
             <dt><a href="#">انجمن</a></dt>
             <dt class="zpHas-sub">میان بر</dt>
             <dd>
@@ -229,86 +233,139 @@
           </dl>
         </nav>
       </div>
-      <!-- register form -->
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-lg-6 col-xl-5">
-            <div class="formWrapper m-auto bg-light">
-              <form class="w-100" id="regLogForm" action="index.html" method="post">
-                <div class="form-title">
-                  <h1> فرم ثبت نام</h1>
-                </div>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp1">نام و نام خانوادگی</label>
-                    </div>
+       <!-- main content -->
+       <div class="main-content">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-1 p-0 d-none d-lg-block mt-5">
+              <div class="social-icon social-icon2" id="socialScroll" style="margin-top: 2rem !important;">
+               <p >مشترک شوید</p>
+               <ul>
+                 <li><a href="https://www.instagram.com/slimodan"><span class="icon-instagram"></span></a></li>
+                 <li><a href="https://t.me/slimodan"><span class="icon-telegram"></span></a></li>
+                 <li><a href="#"><span class="icon-youtube"></span></a></li>
+                 <li><a href="#"><span class="icon-facebook"></span></a></li>
+               </ul>
+               <p>zplearn</p>
+               </div>
+            </div>
+            <div class="col-12 col-lg-10 mt-5">
+              <!-- section two -->
+              <section id="section-two" class="mt-4">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-12 mt-2 " style="border-radius: 10px;background-color:#eee">
+                      <div class="row">
+                        <div class="col-12 bg-info" style="border-top-left-radius: 10px;border-top-right-radius: 10px">
+                          <h3 class="text-center pt-2 text-white">مقالات</h3>
+                        </div>
+                      </div>
+                      <div class="row first-cards p-3 p-lg-3">
+                        <div class="col-12">
+                            <div class="row justify-content-between p-2 ">
+                                <div class="col-12 col-lg-12 rounded" >
+                                  <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                    <div class="row">
+                                      <div class="col-5 pr-3">
+                                        <img src="images/card1.jpg" class="w-100 rounded d-none d-lg-block" height="300px" alt="card1">
+                                      </div>
+                                      <div class="col-7" style="height: 300px;">
+                                        <div class="content-for-article">
+                                          <article class="w-100">
+                                            ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                          </article>
+                                          <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          <div class="row justify-content-between p-2 ">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card10.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between p-2 ">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row justify-content-center">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card2.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between p-2 ">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row justify-content-center">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card6.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between p-2 ">
+                            <div class="col-12 col-lg-12 rounded" >
+                              <div class="content shadow shodow-lg rounded" style="background:#76f2e1">
+                                <div class="row justify-content-center">
+                                  <div class="col-5 pr-3">
+                                    <img src="images/card9.jpg" class="w-100 rounded" height="300px" alt="card1">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="content-for-article">
+                                      <article class="w-100">
+                                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                      </article>
+                                      <button type="button" class="btn-for-more">توضیحات بیشتر</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
-                  <input type="text" class="form-control rounded rounded-right-0" data-fname="UserName" name="نام و نام خانوادگی" data-vld="required|minlen_3" id="inp1" placeholder="نام و نام خانوادگی خود را وارد کنید">
                 </div>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp2">سن</label>
-                    </div>
-                  </div>
-                  <input type="number" max="120" min="12" class="form-control rounded rounded-right-0 " data-vld="required" name="سن" id="inp2" placeholder="سن خود را وارد کنید">
-                </div>
-                <div class="input-group px-3 mt-3 position-relative">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="pcal1">تاریخ تولد</label>
-                    </div>
-                  </div>
-                  <input type="text" class="form-control" id="pcal1" class="pdate" data-vld="required" name="تاریخ تولد" placeholder="روی تقویم کلیک کنید"><br>
-                </div>
-                <script type="text/javascript" defer>
-                  var objCal1 = new AMIB.persianCalendar('pcal1');
-                </script>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp4">نام کاربری</label>
-                    </div>
-                  </div>
-                  <input type="text" class="form-control rounded rounded-right-0 " data-vld="required|minlen_3" name="نام کاربری" id="inp4" placeholder="نام  کاربری خود را وارد کنید">
-                </div>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp5">ایمیل</label>
-                    </div>
-                  </div>
-                  <input type="email" class="form-control rounded rounded-right-0 " data-vld="required|email" name="ایمیل" id="inp5" placeholder="ایمیل خود را وارد کنید">
-                </div>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp6">پسورد</label>
-                    </div>
-                  </div>
-                  <input type="password" class="form-control rounded rounded-right-0 pass1" data-vld="required" name="پسورد" id="inp6" placeholder="پسورد خود را وارد کنید">
-                </div>
-                <div class="input-group px-3 mt-3">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-info text-white">
-                      <label for="inp7">تکرار پسورد</label>
-                    </div>
-                  </div>
-                  <input type="password" class="form-control rounded rounded-right-0 pass2" data-vld="required" name="تکرار پسورد" id="inp7" placeholder="پسورد خود را مجددا وارد کنید">
-                </div>
-                <div class="subRes px-3 mt-3">
-                  <input type="submit" name="" value="ثبت نام">
-                </div>
-                <p class="text-center pt-3">در حال حاضر حساب کاربری دارید؟<a href="logIn.html"> ورود </a></p>
-              </form>
+              </section>
             </div>
           </div>
         </div>
       </div>
-      <script type="text/javascript">
-        $('#regLogForm').zp_validate()
-      </script>
       <!-- footer -->
       <div class="container-fluid bg-dark mt-3">
         <div class="row justify-content-center">
